@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
 
 :root{
@@ -38,29 +38,135 @@ h1,h2{
 }
 
 .card{
-    max-width: 500px;
-    height: 400px;
-    background-color: brown;
+    max-width: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
 }
 
 .col.img{
     background-image: url(/images/image-product-mobile.jpg);
-    background-position: center;
     background-size: cover;
     height: 400px;
     width: 100%;
+    border-radius: 20px 20px 0 0;
 }
 
-/* .col{
-    
-} */
+.col{
+    background-color:var(--white);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.lead{
+    letter-spacing: 0.45rem;
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card-title{
+    font-size: 2.5rem;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-text{
+    line-height: 1.5rem;
+    opacity: 0.5;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.price{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.main-price,
+.discount-price {
+    font-weight: 700;
+}
+
+.main-price{
+    font-size: 2rem;
+    color: var(--dark-cyan);
+    font-family: 'Fraunces', serif;
+}
+
+.discount-price{
+    margin-left: 20px;
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+}
+
+.btn{
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:focus{
+    background-color: var(--very-dark-blue);
+}
+
+.btn svg{
+    margin-right: 10px;
+}
 
 
+@media only screen and (min-width: 768px) {
+    .card {
+        min-width: 780px;
+        height: 480px;
+        display: flex;
+        flex-direction: row;
+    }
 
+    .col.img {
+        background-image: url(/images/image-product-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 50%;
+        border-radius: 20px 0 0 20px;
+    }
 
+    .col {
+       width: 50%;
+       padding: 25px;
+       border-radius: 0 20px 20px 0;
 
+    }
+
+    .lead {
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        margin-bottom: 15px;
+    }
+
+    .card-text {
+        margin-bottom: 20px;
+    }
+
+    .price {
+        margin-bottom: 15px;
+    }
+}
 
 
 
