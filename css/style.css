@@ -45,7 +45,7 @@ h1,h2{
 }
 
 .col.img{
-    background-image: url(/images/image-product-mobile.jpg);
+    background-image: url(./images/image-product-mobile.jpg);
     background-size: cover;
     height: 400px;
     width: 100%;
@@ -136,7 +136,7 @@ h1,h2{
     }
 
     .col.img {
-        background-image: url(/images/image-product-desktop.jpg);
+        background-image: url(./images/image-product-desktop.jpg);
         background-position: center;
         background-size: cover;
         height: 100%;
